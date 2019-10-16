@@ -1,4 +1,4 @@
-from flask import Flask, make_response, redirect
+from flask import Flask
 app = Flask(__name__)
 
 # a route with a dynamic URL pattern
