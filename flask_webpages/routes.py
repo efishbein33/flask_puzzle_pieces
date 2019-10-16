@@ -33,7 +33,8 @@ def index():
 def user_profile(user_id):
     return f"Profile page of user #{user_id}"
 
-''' # another route that uses a dynamic URL pattern but does not use a converter
+''' 
+# another route that uses a dynamic URL pattern but does not use a converter
 @app.route('/books/<genre>/')
 def books(genre):
     return f"All Books in {genre} category"
