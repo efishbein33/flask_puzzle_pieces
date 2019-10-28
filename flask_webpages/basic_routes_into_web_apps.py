@@ -2,7 +2,7 @@ from flask import Flask
 app = Flask(__name__) # we are naming our Flask object 'app' we us @app to define our routes
 
 ''' 
-creating 3 basic webpages within 1 web app. 
+creating 3 basic URLs within 1 web app. 
 1: home page
 2: career page
 3: feedback page
