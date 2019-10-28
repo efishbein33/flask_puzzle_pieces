@@ -9,6 +9,7 @@ creating 3 basic URLs within 1 web app.
 
 run flask in bash and check your URLs to make sure they all work properly
 '''
+
 # three basic routes with a URL pattern and a handler function
 @app.route('/')
 def index():
