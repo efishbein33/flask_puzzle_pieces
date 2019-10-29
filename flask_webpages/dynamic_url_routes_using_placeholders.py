@@ -9,3 +9,8 @@ infinite number of URLs that share the same basic pattern such as /user/<id_numb
 @app.route('/user/<id>/')
 def user_profile(id):
     return f"Profile page of user #{id}"
+
+# dynamic URL with a single URL pattern that is specific to only integers as inputs
+@app.route('/users/<int:id>/')
+def user_int_only_profile(id):
+    return f"Profile page of user integer only #{id}"
