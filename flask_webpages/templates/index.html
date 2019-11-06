@@ -1,14 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 
 <body>
-    <p>Hello {{name}}!</p>
-    <p>Your age is {{age}}</p>
-    <p>And you are {{age}} years old!
+   
+    {# including the navigation bar from nav.html... #}
+    {% include 'nav.html' %}
+
+    {# including the navigation bar from base.html....do i need to include this one as well #}
+    {% include 'base.html' %}
 
 </body>
 </html>
