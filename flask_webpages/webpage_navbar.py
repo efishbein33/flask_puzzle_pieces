@@ -5,3 +5,4 @@ app = Flask(__name__)
 def index():
     ''' returns the index template, which includes the navbar template '''
     return render_template('child.html')
+

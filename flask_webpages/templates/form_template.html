@@ -1,0 +1,10 @@
+{# render the label associated with the name field #}
+{{ form.name.label() }}
+
+{# render the name field itself in the HTML #}
+{{ form.name() }}
+
+{# render the validation errors associated with the name field #}
+{% for error in form.name.errors %}
+    {{ error }}
+{% endfor %}
