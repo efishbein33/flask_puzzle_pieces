@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request, redirect, url_for
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, TextAreaField
+from flask import Flask, render_template, request, redirect, url_for, flash
+# import the Form class so we can instantiate a Form object in this module
 from forms import ContactForm
+
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'a really weird and long key in the form of a string'
@@ -29,6 +29,9 @@ def contact():
         print(message)
 
         #__db logic goes here__#
+
+        # tell the user information was submitted successfully
+        flash("Message Received", "success")
 
         # redirect to the same page with a GET request
         return redirect(url_for('contact'))

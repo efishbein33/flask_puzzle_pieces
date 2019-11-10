@@ -7,6 +7,10 @@
 
 <body>
 
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+        <p class="{{ category }}">{{ message }}</</p>
+    {% endfor %}
+
 <form action="" method="post">
     <!-- generate HTML for CSRF toekn -->
     {{ form.csrf_token() }}
